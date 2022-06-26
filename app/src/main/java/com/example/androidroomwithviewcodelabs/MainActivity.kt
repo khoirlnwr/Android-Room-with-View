@@ -2,6 +2,7 @@ package com.example.androidroomwithviewcodelabs
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.androidroomwithviewcodelabs.adapter.WordListAdapter
 import com.example.androidroomwithviewcodelabs.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,5 +15,8 @@ class MainActivity : AppCompatActivity() {
         val view = binding?.root
 
         setContentView(view)
+
+        // val adapter = WordListAdapter()
+        // binding?.recyclerView
     }
 }
