@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Room with View Codelabs</string>
+    <string name="add_word">Add Word</string>
 </resources>
