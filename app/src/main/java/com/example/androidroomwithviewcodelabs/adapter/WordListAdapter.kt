@@ -1,3 +1,5 @@
+package com.example.androidroomwithviewcodelabs.adapter
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +12,6 @@ class WordListAdapter(private val dataset: List<Word>) :
     RecyclerView.Adapter<WordListAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
         var textView: TextView? = null
 
         init {
@@ -30,8 +31,7 @@ class WordListAdapter(private val dataset: List<Word>) :
         holder.textView?.text = dataset[position].word
     }
 
-    override fun getItemCount(): Int {
-        return dataset.size
-    }
+    override fun getItemCount() = dataset.size
+
 
 }
